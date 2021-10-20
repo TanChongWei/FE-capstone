@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Deals from './pages/CharactersPage'
+import Char from './pages/CharactersPage'
 import Home from './pages/HomePage'
-import DealsListingPage from './pages/CharListingPage'
+import CharListingPage from './pages/CharListingPage'
 import PageNotFound from './pages/PageNotFound'
 import { AppShell } from './AppShell'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
@@ -14,10 +14,10 @@ ReactDOM.render(
       <AppShell>
         <Switch>
           <Route path='/char/:charId'>
-            <DealsListingPage />
+            <CharListingPage />
           </Route>
           <Route path='/char' exact>
-            <Deals />
+            <Char />
           </Route>
           <Route path='/' exact>
             <Home />

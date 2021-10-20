@@ -1,5 +1,5 @@
 import React from 'react'
-import { getCharacters, getCharDetails } from '../services/characterService'
+import { getCharacters, getCharDetails } from '../characterService'
 
 export const useCharacters = () => {
   const [characters, setCharacters] = React.useState([])

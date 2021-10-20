@@ -1,4 +1,4 @@
-import { CharDetails } from '../components/CharDetails'
+import { CharDetails } from '../characters/components/CharDetails'
 import { useParams } from 'react-router-dom'
 import React from 'react'
 

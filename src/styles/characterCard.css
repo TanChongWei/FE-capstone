@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.character-card {
+  background-color: #032202;
+  color: white;
+  border-radius: 2%;
+  outline: solid white 2px;
+}
+
+.character-card:hover{
+  background-color: #369457;
+  transition: 0.2s ease-in;
+  color: white !important;
+}
+
+.character {
+  background-color: #032202;
+  color: white;
+  border-radius: 2%;
+  outline: solid white 2px;
+}

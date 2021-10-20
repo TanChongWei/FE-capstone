@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import { useCharDetails } from '../hooks/hooks'
-import { updateBookmarks } from '../helpers/helpers'
+import { useCharDetails } from '../hooks/characters'
+import { updateBookmarks } from '../../helpers/helpers'
 import { CharacterDetailCard } from './CharacterDetailCard'
 
 export const CharDetails = ({charId}) => {
