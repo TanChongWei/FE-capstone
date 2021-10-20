@@ -5,7 +5,7 @@ import {CharacterCard} from '../characters/components/CharacterCard'
 
 function Characters() {
   const {characters} = useCharacters()
-  const store = retrieveBookmarks().map(char => char.char_id)
+  const store = retrieveBookmarks()
   const bookmarked = store ? store.map(char => char.char_id) : []
   return (
     <div className="d-flex flex-wrap justify-content-center">
