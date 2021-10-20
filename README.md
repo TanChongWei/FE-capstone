@@ -1,3 +1,13 @@
+# Fundamentals of frontend development - Single page React application
+
+This project involves the building of a single page React application that fetches data from an API. The API used in this project can be found here: 
+https://breakingbadapi.com/documentation
+
+- The project involves getting a whole list of characters from the API and, when clicked, will redirect users into a more detailed breakdown of the character in question.
+- Users of the app will also be able to bookmark their favourite characters which will then be saved in localstorage and persist upon the next visit.
+- The site has been deployed to netlify - https://fe-capstone.netlify.app
+- The project is culmination of a 4-day React course involving hooks, React application architecture and fetching data from APIs.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
