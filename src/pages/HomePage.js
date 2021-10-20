@@ -5,17 +5,16 @@ import '../styles/home.css'
 
 function Home() {
   const [bookmarks, setBookmarks] = React.useState(retrieveBookmarks())
-  const charList = bookmarks?.map((char) => {
-    return (
-      <CharacterCard key={char.char_id} 
-        details={char} 
-        deleteBookmark={() => deleteBookmark(char, setBookmarks)} />
-    )})
   return (
     <div className="home">
       <h3 className="text-center">Bookmarked Characters</h3>
       <div className="d-flex flex-wrap justify-content-center">
-        {bookmarks ? charList : ''}
+        {bookmarks && bookmarks.map((char) => {
+          return (
+            <CharacterCard key={char.char_id} 
+              details={char} 
+              deleteBookmark={() => deleteBookmark(char, setBookmarks)} />
+          )})}
       </div>
     </div>
   )
